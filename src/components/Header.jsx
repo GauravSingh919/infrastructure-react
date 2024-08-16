@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <>
-            <div className='bg-white sticky top-0 left-0 right-0 z-50'>
+            <div className='bg-white sticky top-0 left-0 right-0 z-50  drop-shadow-xl shadow-black'>
 
                 <div className='container mx-auto flex items-center justify-between py-5 '>
                     {/* Logo Section */}
