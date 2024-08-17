@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const Header = () => {
@@ -18,7 +17,7 @@ const Header = () => {
 
     return (
         <>
-            <div className='bg-white sticky top-0 left-0 right-0 z-50  drop-shadow-xl shadow-black'>
+            <div className='bg-white sticky top-0 left-0 right-0 z-[99]  drop-shadow-xl shadow-black mix-blend-difference backdrop-blur-2xl'>
 
                 <div className='container mx-auto flex items-center justify-between py-5 '>
                     {/* Logo Section */}
@@ -35,24 +34,6 @@ const Header = () => {
                                     {item.navItems}
                                 </div>
                             ))}
-                        </div>
-                        <div className='flex gap-5'>
-                            <form className="relative flex flex-1">
-                                <label htmlFor="search-field" className="sr-only">
-                                    Search
-                                </label>
-                                <input
-                                    id="search-field"
-                                    name="search"
-                                    type="search"
-                                    placeholder="Search..."
-                                    className="block h-full w-full border py-1.5 pl-2 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
-                                />
-                                <MagnifyingGlassIcon
-                                    aria-hidden="true"
-                                    className="pointer-events-none absolute inset-y-0 right-3 h-full w-5 text-gray-400"
-                                />
-                            </form>
                         </div>
                     </div>
 
@@ -82,19 +63,6 @@ const Header = () => {
                                 {item.navItems}
                             </div>
                         ))}
-                        <form className="relative flex w-full justify-center mt-2">
-                            <input
-                                id="search-field"
-                                name="search"
-                                type="search"
-                                placeholder="Search..."
-                                className="block h-full w-4/5 border py-1.5 pl-2 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
-                            />
-                            <MagnifyingGlassIcon
-                                aria-hidden="true"
-                                className="pointer-events-none absolute inset-y-0 right-4 h-full w-5 text-gray-400"
-                            />
-                        </form>
                     </div>
                 </div>
             )}

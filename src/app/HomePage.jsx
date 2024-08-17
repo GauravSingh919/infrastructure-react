@@ -5,6 +5,9 @@ import AboutUs from '../components/AboutUs'
 import Innovation from '../components/Innovation'
 import Offers from '../components/Offers'
 import Works from '../components/Works'
+import Portfolio from '../components/Portfolio'
+import Team from '../components/Team'
+import Blog from '../components/Blog'
 
 const HomePage = () => {
     return (
@@ -15,6 +18,9 @@ const HomePage = () => {
             <Innovation />
             <Offers />
             <Works />
+            <Portfolio />
+            <Team />
+            <Blog />
         </div>
     )
 }
