@@ -14,8 +14,8 @@ const Portfolio = () => {
     ];
     return (
         <>
-            <div className='container mx-auto py-16'>
-                <div className='flex flex-col px-5'>
+            <div id='portfolio' className='container mx-auto px-5 py-16'>
+                <div className='flex flex-col pt-10'>
                     <div className=' epilogue-web-bold text-[52px] leading-[53.3px]'>
                         Portfolio
 

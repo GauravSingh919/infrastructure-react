@@ -4,11 +4,11 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const navbarItems = [
-        { id: 1, navItems: "Home" },
-        { id: 2, navItems: "Services" },
-        { id: 3, navItems: "Portfolio" },
-        { id: 4, navItems: "About" },
-        { id: 5, navItems: "Contact" }
+        { id: 1, navItems: "Home", url: '#home' },
+        { id: 2, navItems: "Services", url: "#services" },
+        { id: 3, navItems: "Portfolio", url: '#portfolio' },
+        { id: 4, navItems: "About", url: '#about' },
+        { id: 5, navItems: "Contact", url: '#contact' }
     ];
 
     const toggleNavbar = () => {
@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <>
-            <div className='bg-white sticky top-0 left-0 right-0 z-[99]  drop-shadow-xl shadow-black mix-blend-difference backdrop-blur-2xl'>
+            <div className='bg-white sticky top-0 left-0 right-0 z-[99]  drop-shadow-xl shadow-black '>
 
                 <div className='container mx-auto flex items-center justify-between py-5 '>
                     {/* Logo Section */}
@@ -31,7 +31,9 @@ const Header = () => {
                         <div className='flex gap-x-10 font-normal text-[16px] leading-[24px]'>
                             {navbarItems.map((item) => (
                                 <div key={item.id} id={item.id}>
-                                    {item.navItems}
+                                    <a href={item.url}>
+                                        {item.navItems}
+                                    </a>
                                 </div>
                             ))}
                         </div>
@@ -52,20 +54,22 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </div >
 
             {/* Mobile Navbar */}
-            {isOpen && (
-                <div className="md:hidden">
-                    <div className='flex flex-col items-center bg-gray-100 py-2 space-y-2'>
-                        {navbarItems.map((item) => (
-                            <div key={item.id} id={item.id} className='text-lg'>
-                                {item.navItems}
-                            </div>
-                        ))}
+            {
+                isOpen && (
+                    <div className="md:hidden">
+                        <div className='flex flex-col items-center bg-gray-100 py-2 space-y-2'>
+                            {navbarItems.map((item) => (
+                                <div key={item.id} id={item.id} className='text-lg'>
+                                    {item.navItems}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-            )}
+                )
+            }
         </>
     );
 };

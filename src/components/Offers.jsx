@@ -52,32 +52,31 @@ const Offers = () => {
     ])
     return (
         <>
-            <div className='bg-white py-10'>
-                <div className='container px-5 mx-auto'>
-                    <div className='text-center epilogue-web-bold pt-10 text-[53px] leading-[74px]'>
-                        What Can We Offer
-                    </div>
-                    <div className='grid md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8'>
-                        {offers.map((item, i) => (
-                            <div className='p-10 border' key={i} id={item.id}>
-                                <div className='flex flex-col'>
-                                    <div className='epilogue-web-bold text-[21px] leading-[32px]'>
-                                        {item.title}
-                                    </div>
-                                    <span className='text-[#BCC1CA] text-sm leading-[22px] pt-3'>
-                                        {item.description}
-                                    </span>
-                                    <img src={item.img} alt='Offers1' className='h-14 w-14 my-10' />
-                                    <span className='font-normal text-[15px] leading-[24px]'>
-                                        {item.links}
-                                    </span>
+            <div id='services' className='container px-5 mx-auto py-16'>
+                <div className='text-center epilogue-web-bold pt-10 text-[53px] leading-[74px]'>
+                    What Can We Offer
+                </div>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 pt-10 gap-8'>
+                    {offers.map((item, i) => (
+                        <div className='p-10 border' key={i} id={item.id}>
+                            <div className='flex flex-col'>
+                                <div className='epilogue-web-bold text-[21px] leading-[32px]'>
+                                    {item.title}
                                 </div>
+                                <span className='text-[#BCC1CA] text-sm leading-[22px] pt-3'>
+                                    {item.description}
+                                </span>
+                                <img src={item.img} alt='Offers1' className='h-14 w-14 my-10' />
+                                <span className='font-normal text-[15px] leading-[24px]'>
+                                    {item.links}
+                                </span>
                             </div>
-                        ))}
+                        </div>
+                    ))}
 
-                    </div>
                 </div>
             </div>
+
         </>
     )
 }

@@ -34,7 +34,7 @@ const Team = () => {
                 </p>
             </div>
             <div className='pt-10'>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+                <div className='grid grid-cols-2 gap-10'>
                     {team.map((item, i) => (
                         <div key={i}>
                             <div className='relative group'>

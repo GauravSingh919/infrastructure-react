@@ -8,6 +8,8 @@ import Works from '../components/Works'
 import Portfolio from '../components/Portfolio'
 import Team from '../components/Team'
 import Blog from '../components/Blog'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const HomePage = () => {
     return (
@@ -21,6 +23,8 @@ const HomePage = () => {
             <Portfolio />
             <Team />
             <Blog />
+            <Contact />
+            <Footer />
         </div>
     )
 }

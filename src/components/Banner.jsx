@@ -3,7 +3,7 @@ import BannerImage from "/BannerInfra.jpg"
 const Banner = () => {
     return (
         <>
-            <div className='bannerPosition relative h-screen md:h-screen'>
+            <div id='home' className='bannerPosition relative h-screen md:h-screen'>
                 <div className='bgBlend h-screen md:h-screen overflow-x-hidden bg-opacity-75 bg-black' >
                     <div>
                         <img src={BannerImage} alt='Banner' className='object-top absolute w-full bg-cover h-screen object-cover -z-[3]' />
