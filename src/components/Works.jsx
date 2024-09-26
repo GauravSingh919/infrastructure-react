@@ -3,7 +3,7 @@ import React from 'react'
 const Works = () => {
     return (
         <>
-            <div className='py-16 bg-[#1A1A1A]'>
+            <div className='py-16 bg-[#001F3F]'>
                 <div className='container mx-auto px-5'>
                     <div className='flex flex-col text-white'>
                         <div className='font-normal text-sm leading-[22px] text-center'>
@@ -15,7 +15,7 @@ const Works = () => {
                     <div className='grid md:grid-cols-3 gap-10 pt-16 md:pt-32'>
                         <div className='flex flex-col items-center text-[#BCC1CA]'>
                             <img src='handshake.svg' alt='' className='w-20 h-20' />
-                            <div className='pt-5 epilogue-web-bold text-[20px] leading-[30px] text-center '>
+                            <div className='pt-5 epilogue-web-bold text-[20px] leading-[30px] text-center  '>
                                 Community Engagement
                                 <p className='font-normal text-sm leading-[22px] text-center pt-4'>Collaborating with local stakeholders to understand their needs and ensure our projects serve the community effectively</p>
                             </div>

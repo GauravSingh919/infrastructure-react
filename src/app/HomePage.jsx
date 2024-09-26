@@ -10,6 +10,8 @@ import Team from '../components/Team'
 import Blog from '../components/Blog'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import ClientSection from '../components/ClientSection'
+import Testimonials from '../components/Testimonials'
 
 const HomePage = () => {
     return (
@@ -21,6 +23,8 @@ const HomePage = () => {
             <Offers />
             <Works />
             <Portfolio />
+            <ClientSection />
+            <Testimonials />
             <Team />
             <Blog />
             <Contact />
