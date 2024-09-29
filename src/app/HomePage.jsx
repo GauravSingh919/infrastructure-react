@@ -12,6 +12,7 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import ClientSection from '../components/ClientSection'
 import Testimonials from '../components/Testimonials'
+import Blogs from '../components/Blogs'
 
 const HomePage = () => {
     return (
@@ -25,8 +26,9 @@ const HomePage = () => {
             <Portfolio />
             <ClientSection />
             <Testimonials />
-            <Team />
-            <Blog />
+            {/* <Team /> */}
+            {/* <Blog /> */}
+            <Blogs />
             <Contact />
             <Footer />
         </div>
