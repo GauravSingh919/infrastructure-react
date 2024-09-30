@@ -13,6 +13,7 @@ import Footer from '../components/Footer'
 import ClientSection from '../components/ClientSection'
 import Testimonials from '../components/Testimonials'
 import Blogs from '../components/Blogs'
+import Location from '../components/Location'
 
 const HomePage = () => {
     return (
@@ -30,6 +31,7 @@ const HomePage = () => {
             {/* <Blog /> */}
             <Blogs />
             <Contact />
+            <Location />
             <Footer />
         </div>
     )

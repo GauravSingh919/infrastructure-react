@@ -30,13 +30,20 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-            <div className='flex justify-between px-10 pb-5'>
-                <div>
-
-                </div>
-                <div className='font-normal text-[13px] leading-[23px]'>
+            <div className='flex justify-between px-20 pb-5'>
+                <div className='font-normal text-[18px] leading-[23px] text-[#6F6C90]'>
                     Copyright BLPR. All Rights Reserved
                 </div>
+                <div className='flex items-center gap-1 font-normal text-[18px] leading-[30px]'>
+                    All Rights Reserved |
+                    <a href="" className='underline'>
+                        Terms and Conditions
+                    </a> |
+                    <a href="" className='underline'>
+                        Privacy Policy
+                    </a>
+                </div>
+
             </div>
         </>
     )

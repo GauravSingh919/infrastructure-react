@@ -8,7 +8,7 @@ const Banner = () => {
                     <div>
                         <img src={BannerImage} alt='Banner' className='object-top absolute w-full bg-cover h-screen object-cover -z-[3]' />
                     </div>
-                    <div className='bgText container mx-auto flex  justify-center lg:justify-start items-center h-full px-5'>
+                    <div className='bgText container mx-auto flex justify-center lg:justify-start items-center h-full px-5'>
                         <div className='flex flex-col items-start text-white'>
                             <p className='text-[16px] leading-[24px] sm:pt-4 md:pt-4  xs:pt-2 titillium-web-semibold'>Welcome to BLPR</p>
                             <p className='titillium-web-semibold text-[70px] leading-[84px]'>Crafting the Foundations <br /> of the Future
